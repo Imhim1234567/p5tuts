@@ -3,7 +3,7 @@ function setup() {
 }
 
 function draw() {
-  background(220, 100, 100);
+  background(220, 200, 100);
 
   var x = map(noise(xoff), 0,1,0, width);
   var y = map(noise(xoff), 0,1,0, width);
