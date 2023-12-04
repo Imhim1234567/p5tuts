@@ -6,12 +6,20 @@ function setup() {
 
 function draw() {
   background(100, 156, 100);
-
+  stroke(255);
+  noFill();
+  beginShape();
+  var xoff = 0;
   for (var x = 0; x < width; x++){
-
-    point(x,200);
+    //var y = random(height);
+    var  y = noise(xoff)*height;
+    vertex(x,y);
     stroke(255);
+
+    xoff += 0.02;
   }
+  endShape(); 
+  noLoop();
 
 //  var x = map(noise(xoff1), 0,1,0, width);
   //var y = map(noise(xoff2), 0,1,0, height);
@@ -21,6 +29,6 @@ function draw() {
 
 
 
-  ellipse(x,y,24,24)
+  //ellipse(x,y,24,24)
 
 }
