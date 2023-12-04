@@ -1,4 +1,4 @@
-var xoff = 0;
+var xoff1 = 0;
 var xoff2 = 10000;
 function setup() {
   createCanvas(400, 400);
