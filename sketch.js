@@ -14,7 +14,7 @@ function draw() {
   var xoff = start;
   for (var x = 0; x < width; x++){
     //var y = random(height);
-    var  y = noise(xoff)*height;
+    var  y = sin(xoff)*height;
     vertex(x,y);
     stroke(255);
 
