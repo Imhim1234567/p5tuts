@@ -13,8 +13,12 @@ function draw() {
   beginShape();
   var xoff = start;
   for (var x = 0; x < width; x++){
+    var n = map(noise(xoff), 0, 1, 0, height);
+    var s = map(sin(xoff), -1, 1, -50, 50);
+    var y = s + n;
+
     //var y = random(height);
-    var  y = sin(xoff)*height;
+    //var  y = sin(xoff)*height;
     vertex(x,y);
     stroke(255);
 
