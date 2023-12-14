@@ -1,5 +1,6 @@
 var n = 0;
 var c = 8;
+switch = 1;
 
 
 
@@ -20,7 +21,18 @@ function draw() {
   noStroke();
 
   ellipse(x, y, 4, 4);
-  n++;
+  if (switch % 2 = 0) {
+    n++;
+  }
+  else {
+    n--;
+  }
+  if (n >= 255) {
+    switch = 3
+  }
+  if (n <= 0) {
+   switch = 2
+  }
 
   
   
