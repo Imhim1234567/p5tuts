@@ -1,4 +1,4 @@
-var n = 0;
+var n = 1;
 var c = 8;
 var reverse = false;
 
