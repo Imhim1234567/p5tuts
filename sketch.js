@@ -1,5 +1,7 @@
 var n = 0;
-var c = 4;
+var c = 8;
+var reverse = false;
+
 function setup() {
   createCanvas(2000, 1000);
   angleMode(DEGREES);
@@ -8,19 +10,26 @@ function setup() {
 }
 
 function draw() {
-  var  a = n * 137.5
+  var a = n * 137.5;
   var r = c * sqrt(n);
 
-  var x = r * cos(a) + width/3;
-  var y = r * sin(a) + height/3;
-  fill(n % 255 ,255, 255);
+  var x = r * cos(a) + width / 3;
+  var y = r * sin(a) + height / 3;
+  fill(n % 255, 255, 255);
   noStroke();
 
-  ellipse(x,y,4,4)
+  ellipse(x, y, 4, 4);
 
-
-  n+=5
+  if (reverse) {
+    n--;
+  } else {
+    n++;
   }
+
+  if (n >= 255 || n <= 0) {
+    reverse = !reverse; // Change the direction when n reaches 255 or 0
+  }
+}
 
 
 
