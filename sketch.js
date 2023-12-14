@@ -20,16 +20,6 @@ function draw() {
 
   ellipse(x, y, 4, 4);
 
-  if (reverse) {
-    n--;
-  } else {
-    n++;
-  }
-
-  if (n >= 255 || n <= 0) {
-    reverse = reverse; // Change the direction when n reaches 255 or 0
-  }
-}
 
 
 
