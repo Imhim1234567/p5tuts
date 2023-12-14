@@ -1,6 +1,6 @@
 var n = 0;
 var c = 8;
-var switch = 1;
+
 
 
 
