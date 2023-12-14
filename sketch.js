@@ -21,18 +21,7 @@ function draw() {
   noStroke();
 
   ellipse(x, y, 4, 4);
-  if (switch == 1) {
-    n += 1;
-  }
-  else {
-    n -= 1;
-  }
-  if (n >= 255) {
-    switch = 2
-  }
-  if (n <= 0) {
-   switch = 1
-  }
+  n++;
 
   
   
