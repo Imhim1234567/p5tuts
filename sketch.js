@@ -15,7 +15,7 @@ function draw() {
 
   var x = r * cos(a) + width / 3;
   var y = r * sin(a) + height / 3;
-  fill(n % 255, 255, 255);
+  fill(n % 256, 255, 255);
   noStroke();
 
   ellipse(x, y, 4, 4);
