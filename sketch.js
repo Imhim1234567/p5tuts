@@ -1,6 +1,6 @@
 var n = 0;
 var c = 8;
-var reverse = false;
+
 
 
 function setup() {
@@ -22,9 +22,9 @@ function draw() {
   ellipse(x, y, 4, 4);
   n++;
   if (n = 255){
-    reverse = true;
+    n--
   } else{
-    reverse = false;
+   n++;
   }
 }
 
