@@ -23,7 +23,7 @@ function draw() {
 
 
   if (n >= 255 || n <= 0) {
-    reverse = !reverse; // Change the direction when n reaches 255 or 0
+    reverse = reverse; // Change the direction when n reaches 255 or 0
   }
 }
 
