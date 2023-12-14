@@ -21,11 +21,10 @@ function draw() {
 
   ellipse(x, y, 4, 4);
   n++;
-  if (n = 255){
-    n--
-  } else{
-   n++;
-  }
+
+  
+  
+  
 }
 
 
