@@ -1,5 +1,5 @@
 var n = 0;
-var c = 2;
+var c = 4;
 function setup() {
   createCanvas(2000, 1000);
   angleMode(DEGREES);
@@ -13,7 +13,7 @@ function draw() {
 
   var x = r * cos(a) + width/3;
   var y = r * sin(a) + height/3;
-  fill(255 ,134, r );
+  fill(n % 255 ,255, 255);
   noStroke();
 
   ellipse(x,y,4,4)
