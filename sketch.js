@@ -19,6 +19,7 @@ function draw() {
   noStroke();
 
   ellipse(x, y, 4, 4);
+  n++;
 }
 
 
