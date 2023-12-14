@@ -1,6 +1,6 @@
 var n = 0;
 var c = 8;
-var reverse = false;
+
 
 function setup() {
   createCanvas(2000, 1000);
@@ -19,7 +19,7 @@ function draw() {
   noStroke();
 
   ellipse(x, y, 4, 4);
-
+}
 
 
 
