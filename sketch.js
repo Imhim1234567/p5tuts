@@ -17,10 +17,10 @@ function draw() {
 
   var x = r * cos(a) + width / 3;
   var y = r * sin(a) + height / 3;
-  fill(255,255,255);
+  fill(n%256,255,255);
   noStroke();
 
-  ellipse(x, y, 4, 4);
+  ellipse(mouseX, mouseY, 1*c, 1*c);
   n++;
 
   
