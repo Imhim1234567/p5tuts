@@ -1,5 +1,5 @@
 var n = 0;
-var c = 8;
+var c = 15;
 
 
 
@@ -23,11 +23,11 @@ function draw() {
   ellipse(mouseX, mouseY, 1*c, 1*c);
   n++;
 
+  if(mouseIsPressed){
+    c = c*1.04;
+  }
   
   
   
   
 }
-
-
-
